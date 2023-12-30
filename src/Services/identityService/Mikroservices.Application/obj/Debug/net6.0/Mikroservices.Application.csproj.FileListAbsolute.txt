@@ -1,0 +1,15 @@
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\bin\Debug\net6.0\Mikroservices.Application.deps.json
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\bin\Debug\net6.0\Mikroservices.Application.dll
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\bin\Debug\net6.0\Mikroservices.Application.pdb
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\bin\Debug\net6.0\Mikroservices.Domain.dll
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\bin\Debug\net6.0\Mikroservices.Domain.pdb
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\Mikroservices.Application.csproj.AssemblyReference.cache
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\Mikroservices.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\Mikroservices.Application.AssemblyInfoInputs.cache
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\Mikroservices.Application.AssemblyInfo.cs
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\Mikroservices.Application.csproj.CoreCompileInputs.cache
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\Mikroservices.Application.csproj.CopyComplete
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\Mikroservices.Application.dll
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\refint\Mikroservices.Application.dll
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\Mikroservices.Application.pdb
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Services\identityService\Mikroservices.Application\obj\Debug\net6.0\ref\Mikroservices.Application.dll

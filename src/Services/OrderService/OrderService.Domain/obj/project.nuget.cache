@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "rL+CLUZfEwS73rhzelmj7IVz7xDlmwoi7ok5G8hvj7clyfHcXQifvKcY425U1hAscOL3ZYL6+Xd0g8IjNugRjQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kmlcn\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\polly\\7.2.3\\polly.7.2.3.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\rabbitmq.client\\6.2.4\\rabbitmq.client.6.2.4.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

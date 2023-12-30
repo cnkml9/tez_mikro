@@ -1,0 +1,71 @@
+version: '3.4'
+
+services:
+  basketservice.api:
+    container_name: c_basketServive
+    image: kmlcn1/basketserviceapi
+    build:
+      context: .
+      dockerfile: BasketService.API/Dockerfile
+
+  catagolservice.api:
+    container_name: c_catalogservice
+    image: kmlcn1/catagolserviceapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+
+  identityservice.api:
+    container_name: c_identityservice
+    image: kmlcn1/identityserviceapi
+    
+
+  notificationservice:
+    container_name: c_notificationservice
+    image: kmlcn1/notificationservice
+    build:
+      context: .
+      dockerfile: src/Services/NotificationService/NotificationService/Dockerfile
+
+
+  orderservice.api:
+    container_name: c_orderservice
+    image: kmlcn1/orderserviceapi
+    build:
+      context: .
+      dockerfile: src/Services/OrderService/OrderService.API/Dockerfile
+
+
+  paymnetservice.api:
+    container_name: c_paymentservice
+    image: kmlcn1/paymnetserviceapi
+    build:
+      context: .
+      dockerfile: src/Services/PaymnetService/PaymnetService.Api/Dockerfile
+
+
+  web.apigateway:
+    container_name: c_apigateway
+    image: kmlcn1/webapigateway
+    build:
+      context: .
+      dockerfile: src/ApiGateways/Web.ApiGateway/Dockerfile
+
+      
+  s_redis:
+    container_name: c_redis
+    image: redis
+
+  s_rabbitmq:
+    container_name: c_rabbitmq
+    image: rabbitmq:3-management
+
+  # s_mysql:
+  #   container_name: mysql-container
+  #   image: mysql:latest
+    
+
+  s_consul:
+    container_name: c_consul
+    image: hashicorp/consul

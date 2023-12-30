@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "c0NOc3JBntBM5Auu+EXecfhW1OSfthjbVH4GjQC1NvhT8LJvmXDXn/06dbuqPrS7WJDhYLr6BNpFQykKX4CYuQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\BuildingBlock\\EventBus\\EventBus.Factory\\EventBus.Factory.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kmlcn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\polly\\7.2.3\\polly.7.2.3.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\rabbitmq.client\\6.2.4\\rabbitmq.client.6.2.4.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

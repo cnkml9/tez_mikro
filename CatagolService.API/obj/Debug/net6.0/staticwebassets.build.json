@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Qd4dHBylJpg1WeHgEQDn7fA+xieJHMkM8KCMyaSepzQ=",
+  "Source": "CatagolService.API",
+  "BasePath": "_content/CatagolService.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,2 @@
+C:\Users\kmlcn\source\repos\Mikroservices_Tez\Mikroservices\src\Clients\ReactWebApp\WebApp\obj\Debug\webapp.esproj.CoreCompileInputs.cache
+C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices\src\Clients\ReactWebApp\WebApp\obj\Debug\webapp.esproj.CoreCompileInputs.cache

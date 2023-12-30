@@ -1,0 +1,196 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Infrastructure\\Mikroservices.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Application\\Mikroservices.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Application\\Mikroservices.Application.csproj",
+        "projectName": "Mikroservices.Application",
+        "projectPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Application\\Mikroservices.Application.csproj",
+        "packagesPath": "C:\\Users\\kmlcn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kmlcn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Domain\\Mikroservices.Domain.csproj": {
+                "projectPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Domain\\Mikroservices.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Domain\\Mikroservices.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Domain\\Mikroservices.Domain.csproj",
+        "projectName": "Mikroservices.Domain",
+        "projectPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Domain\\Mikroservices.Domain.csproj",
+        "packagesPath": "C:\\Users\\kmlcn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kmlcn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Infrastructure\\Mikroservices.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Infrastructure\\Mikroservices.Infrastructure.csproj",
+        "projectName": "Mikroservices.Infrastructure",
+        "projectPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Infrastructure\\Mikroservices.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\kmlcn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kmlcn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Application\\Mikroservices.Application.csproj": {
+                "projectPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Application\\Mikroservices.Application.csproj"
+              },
+              "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Domain\\Mikroservices.Domain.csproj": {
+                "projectPath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\Services\\identityService\\Mikroservices.Domain\\Mikroservices.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "Routes": [
+
+    {
+      "UseServiceDiscovery": true,
+      "ServiceName": "CatalogService",
+      "DownstreamPathTemplate": "/api/catalog/{everything}",
+      "DownstreamScheme": "http",
+
+      "UpstreamPathTemplate": "/catalog/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete", "Put" ],
+      "UpstreamScheme": "http"
+    },
+    {
+      "UseServiceDiscovery": true,
+      "ServiceName": "IdentityService",
+      "DownstreamPathTemplate": "/api/auth",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/auth",
+      "UpstreamHttpMethod": [ "Post" ],
+      "UpstreamScheme": "http"
+    },
+    {
+      "UseServiceDiscovery": true,
+      "ServiceName": "BasketService",
+      "DownstreamPathTemplate": "/api/basket/{everythings}",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/basket/{everythings}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete", "Put" ],
+      "UpstreamScheme": "http"
+    },
+    {
+      "UseServiceDiscovery": true,
+      "ServiceName": "OrderService",
+      "DownstreamPathTemplate": "/api/order/{everythings}",
+      "DownstreamScheme": "http",
+      "UpstreamPathTemplate": "/order/{everythings}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete", "Put" ],
+      "UpstreamScheme": "http"
+    }
+  ],
+
+
+  "GlobalConfiguration": {
+    "BaseUrl": "http://webapigateway.api:5000",
+    "ServiceDiscoveryProvider": {
+      "Host": "c_apigateway",
+      "Port": 8500,
+      "Type":  "Consul"
+    }
+  }
+
+}

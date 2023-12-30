@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6G/OsGW7jMHNulZEDG2GPjHQF1CTXpWJXOfXYMdyC0E=",
+  "Source": "PaymnetService.Api",
+  "BasePath": "_content/PaymnetService.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

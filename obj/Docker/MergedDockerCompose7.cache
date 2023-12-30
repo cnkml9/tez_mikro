@@ -1,0 +1,302 @@
+name: dockercompose896830050766689347
+services:
+  basketservice.api:
+    build:
+      context: C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices
+      dockerfile: BasketService.API/Dockerfile
+    container_name: c_basketServive
+    depends_on:
+      s_consul:
+        condition: service_started
+        required: true
+      s_rabbitmq:
+        condition: service_started
+        required: true
+      s_redis:
+        condition: service_started
+        required: true
+      web.apigateway:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5003
+      ConsulConfig__Address: http://s_consul:8500
+      ConsulConfig__ServiceAddress: http://c_basketservice:5003
+      ConsulConfig__ServiceId: Basket
+      ConsulConfig__ServiceName: BasketService
+    external_links:
+    - s_consul
+    - s_rabbitmq
+    - s_redis
+    image: basketserviceapi
+    networks:
+      net_backendservices: null
+    ports:
+    - mode: ingress
+      target: 5003
+      published: "5003"
+      protocol: tcp
+  catagolservice.api:
+    build:
+      context: C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices
+      dockerfile: Dockerfile
+    container_name: c_catalogservice
+    depends_on:
+      s_consul:
+        condition: service_started
+        required: true
+      s_mysql:
+        condition: service_started
+        required: true
+      s_rabbitmq:
+        condition: service_started
+        required: true
+      web.apigateway:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5004
+      ConsulConfig__Address: http://s_consul:8500
+      ConsulConfig__ServiceAddress: http://c_catalogservice:5004
+      ConsulConfig__ServiceId: Catalog
+      ConsulConfig__ServiceName: CatalogService
+    external_links:
+    - s_consul
+    - s_rabbitmq
+    - s_mysql
+    image: catagolserviceapi
+    networks:
+      net_backendservices: null
+    ports:
+    - mode: ingress
+      target: 5004
+      published: "5004"
+      protocol: tcp
+  identityservice.api:
+    build:
+      context: C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices
+      dockerfile: src/services/identityService/Dockerfile
+    container_name: c_identityservice
+    depends_on:
+      s_consul:
+        condition: service_started
+        required: true
+      s_mysql:
+        condition: service_started
+        required: true
+      s_rabbitmq:
+        condition: service_started
+        required: true
+      web.apigateway:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5005
+      ConsulConfig__Address: http://s_consul:8500
+      ConsulConfig__ServiceAddress: http://c_identityservice:5005
+      ConsulConfig__ServiceId: Identity
+      ConsulConfig__ServiceName: IdentityService
+    external_links:
+    - s_consul
+    - s_rabbitmq
+    - s_mysql
+    image: identityserviceapi
+    networks:
+      net_backendservices: null
+    ports:
+    - mode: ingress
+      target: 5005
+      published: "5005"
+      protocol: tcp
+  notificationservice:
+    build:
+      context: C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices
+      dockerfile: src/Services/NotificationService/NotificationService/Dockerfile
+    container_name: c_notificationservice
+    depends_on:
+      s_rabbitmq:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    external_links:
+    - s_consul
+    - s_rabbitmq
+    image: notificationservice
+    networks:
+      net_backendservices: null
+    tty: true
+  orderservice.api:
+    build:
+      context: C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices
+      dockerfile: src/Services/OrderService/Dockerfile
+    container_name: c_orderservice
+    depends_on:
+      s_consul:
+        condition: service_started
+        required: true
+      s_mysql:
+        condition: service_started
+        required: true
+      s_rabbitmq:
+        condition: service_started
+        required: true
+      web.apigateway:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5002
+      ConsulConfig__Address: http://s_consul:8500
+      ConsulConfig__ServiceAddress: http://c_orderservice:5002
+      ConsulConfig__ServiceId: Order
+      ConsulConfig__ServiceName: OrderService
+    external_links:
+    - s_consul
+    - s_rabbitmq
+    - s_mysql
+    image: orderserviceapi
+    networks:
+      net_backendservices: null
+    ports:
+    - mode: ingress
+      target: 5002
+      published: "5002"
+      protocol: tcp
+  paymnetservice.api:
+    build:
+      context: C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices
+      dockerfile: src/Services/PaymnetService/PaymnetService.Api/Dockerfile
+    container_name: c_paymentservice
+    depends_on:
+      s_rabbitmq:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5001
+    external_links:
+    - s_consul
+    - s_rabbitmq
+    image: paymnetserviceapi
+    networks:
+      net_backendservices: null
+    ports:
+    - mode: ingress
+      target: 5001
+      protocol: tcp
+  s_consul:
+    container_name: c_consul
+    image: hashicorp/consul
+    networks:
+      net_apigateway: null
+      net_backendservices: null
+      net_frontend: null
+    ports:
+    - mode: ingress
+      target: 8500
+      published: "8500"
+      protocol: tcp
+    - mode: ingress
+      target: 8600
+      published: "8600"
+      protocol: tcp
+    - mode: ingress
+      target: 8600
+      published: "8600"
+      protocol: udp
+  s_mysql:
+    container_name: mysql-container
+    environment:
+      MYSQL_DATABASE: your_database_name
+      MYSQL_PASSWORD: your_mysql_password
+      MYSQL_ROOT_PASSWORD: your_root_password
+      MYSQL_USER: your_mysql_user
+    image: mysql:latest
+    networks:
+      net_backendservices: null
+    ports:
+    - mode: ingress
+      target: 3306
+      published: "3306"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: mysql_data
+      target: /var/opt/mysql/data
+      volume: {}
+  s_rabbitmq:
+    container_name: c_rabbitmq
+    image: rabbitmq:3-management
+    networks:
+      net_apigateway: null
+      net_backendservices: null
+      net_frontend: null
+    ports:
+    - mode: ingress
+      target: 5672
+      published: "5672"
+      protocol: tcp
+    - mode: ingress
+      target: 15672
+      published: "15672"
+      protocol: tcp
+    volumes:
+    - type: volume
+      source: rabbitmq
+      target: /var/lib/rabbitmq
+      volume: {}
+  s_redis:
+    container_name: c_redis
+    image: redis
+    networks:
+      net_backendservices: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /opt/app_data/redis/
+      target: /data
+      bind:
+        create_host_path: true
+  web.apigateway:
+    build:
+      context: C:\Users\kmlcn\OneDrive\Masaüstü\Tez_Project\Mikroservices
+      dockerfile: src/ApiGateways/Web.ApiGateway/Dockerfile
+    container_name: c_apigateway
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:5000
+    image: webapigateway
+    networks:
+      net_apigateway: null
+      net_backendservices: null
+    ports:
+    - mode: ingress
+      target: 5000
+      published: "5000"
+      protocol: tcp
+networks:
+  net_apigateway:
+    name: net_apigateway
+    driver: bridge
+    external: true
+  net_backendservices:
+    name: net_backendservices
+    driver: bridge
+    external: true
+  net_frontend:
+    name: net_frontend
+    driver: bridge
+    external: true
+volumes:
+  mysql_data:
+    name: dockercompose896830050766689347_mysql_data
+  rabbitmq:
+    name: dockercompose896830050766689347_rabbitmq

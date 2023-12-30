@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BFIIQRrcv494L/8Np08d6nvEz5aTxrE/Y9wUGQt9KNt9UVEtwhaV65WIO2xjhTuF/uWamec4GnvEBs4v1Hm2+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kmlcn\\OneDrive\\Masaüstü\\Tez_Project\\Mikroservices\\src\\BuildingBlock\\EventBus\\EventBus.Base\\EventBus.Base.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kmlcn\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\kmlcn\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
